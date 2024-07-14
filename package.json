@@ -1,0 +1,72 @@
+{
+  "name": "keying",
+  "version": "1.2.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "validation",
+    "account",
+    "Correspondence account",
+    "INN",
+    "BIC",
+    "Card",
+    "Credit Card",
+    "checkpoint",
+    "OGRN",
+    "KPP",
+    "OKPO",
+    "SNILS",
+    "VIN",
+    "валидация",
+    "ИНН",
+    "БИК",
+    "Карта",
+    "Кредитная карта",
+    "ОГРН",
+    "КПП",
+    "ОКПО",
+    "СНИЛС",
+    "ВИН",
+    "Keying"
+  ],
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VBolshakovsky/keying.git"
+  },
+  "license": "ISC",
+  "description": "Project for validating codes of various classifiers",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "jest",
+    "lint": "eslint ./src --ext .ts,.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.7.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint": "^9.7.0",
+    "globals": "^15.8.0",
+    "jest": "^29.7.0",
+    "prettier": "3.3.3",
+    "ts-jest": "^29.2.2",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.0"
+  }
+}
